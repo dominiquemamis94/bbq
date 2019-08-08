@@ -120,7 +120,7 @@ $("#check").click(function(){
               }
 
           }
-          if(enumeration_points == answers.length-1){
+          if(enumeration_points == answers.length-1 && answers.length != 1){
             $("#"+x+"_answer").addClass('alert-success');
           }else{
              $("#"+x+"_answer").addClass('alert-danger');
@@ -138,7 +138,7 @@ $("#check").click(function(){
                 }, // added data type
 
                 success: function(res) {
-                  
+
                 }
     });
 
