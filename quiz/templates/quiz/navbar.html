@@ -1,0 +1,37 @@
+{% load static %}
+<nav class="navbar self_nav navbar-main">
+    <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+<!--                 <div class="navbar-brand hidden-xs">
+            <a class="white-circle" href="/home">
+                <img class="brand_logo" src="{% static 'img/logo.jpg' %}"  alt="Logo">
+            </a>
+        </div> -->
+        <ul class="nav navbar-nav">            
+             <li><a href="/home_page">Quizzes</span></a></li>
+             <li><a href="#">Results</span></a></li>
+     <!--    <li><a href="/project_divisions">Divisions</a></li>
+        <li><a href="/project_health">Project Health</a></li>
+        <li><a href="/project_details">Project Details</a></li> -->
+        </ul>
+
+
+        <ul class="nav navbar-nav navbar-right">
+            <p class="navbar-text">Signed in as {{ user.get_username }}</p>
+          <li><a href="/logout_user">Logout</a></li>
+        </ul>
+
+    </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+

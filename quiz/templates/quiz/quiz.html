@@ -1,0 +1,30 @@
+{% extends "quiz/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class = "container">
+<center>
+<h1>{{ subject }}</h1>
+<h2 id = 'score'></h2>
+</center>
+
+<!-- <form method = "POST" action = "check"> -->
+
+<h3>I. Multiple Choice</h3>
+<div id = "multiple_choice">
+</div>
+
+<h3>II. Enumeration</h3>
+<div id = "enumeration">
+</div>
+
+<br>
+<button type="submit" class="btn btn-info login_btn" id = "check">Submit</button>
+<!-- </form> -->
+
+
+</div>
+<script type = "text/javascript" src= "{% static 'js/quiz.js' %}"></script>
+<!-- <script type = "text/javascript" src= "{% static 'js/charts.js' %}"></script> -->
+{% endblock %}

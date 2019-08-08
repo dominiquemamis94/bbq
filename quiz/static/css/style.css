@@ -1,0 +1,144 @@
+h1 a, h2 a , h3 a, h4 a, h5 a{
+	color: white;
+}
+
+.nav-link {
+	color: white !important;
+}
+
+.headerz{
+	background-color: #ff6961;
+}
+
+body {
+	padding-left: 15px;
+}
+
+#participant_count{
+	font-size: 80px !important;
+	color: #2F74D0;
+}
+
+#login_card{
+	margin-top: 5%;
+}
+
+html,body{
+	height: 100%
+}
+.user_card {
+	top: 50px;
+	height: 300px;
+	width: 400px;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 5px;
+
+}
+.brand_logo_container {
+	position: absolute;
+	height: 170px;
+	width: 170px;
+	top: -75px;
+	border-radius: 50%;
+	background: #ff6961;
+	padding: 10px;
+	text-align: center;
+}
+.brand_logo {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+.form_container {
+	margin-top: 50px;
+}
+.login_btn {
+	width: 100%;
+	background: #ff6961 !important;
+	color: white !important;
+}
+.login_btn:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+.login_container {
+	padding: 0 2rem;
+}
+.input-group-text {
+	background: #c0392b !important;
+	color: white !important;
+	border: 0 !important;
+	border-radius: 0.25rem 0 0 0.25rem !important;
+}
+.input_user,
+.input_pass:focus {
+	box-shadow: none !important;
+	outline: 0px !important;
+}
+
+#footer {
+	position: relative;
+	bottom: 0;
+	left: -10%;
+	/* Set the fixed height of the footer here */
+	height: 100px;
+}
+.footertext {
+	color: gray;
+}
+
+.footer_img{
+	height:65px;
+	
+}
+
+.navbar .container {
+	background-color: #ff6961 !important;
+	text-align: center;
+}
+.navbar-collapse .navbar-brand {
+	background-color: #ff6961 !important;
+	display: inline-block;
+	float: none;
+	padding: 0;
+	margin: 0 !important;
+	overflow: visible;
+}
+.navbar-collapse .navbar-brand .white-circle {
+	background-color: #ff6961 !important;
+	display: block;
+	width: 141px;
+	height: 136px;
+	background-color: white;
+	border-radius: 50%;
+	left: -90%;
+	position: relative;
+	z-index: 2;
+}
+.navbar-collapse .navbar-brand .white-circle .logo {
+	width: 131px;
+	height: 131px;
+}
+
+.navbar .nav a, .navbar .nav p{
+	color: white;
+}
+
+.navbar .nav a:hover{
+	color:  #ff6961;
+}
+
+
+.content{
+margin-top: 100px !important;	
+}
