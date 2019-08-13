@@ -4,6 +4,7 @@ selected_subject = (window.location.search.substr(1).split('='))[1];
 var mc_answers = {};
 var enum_answers = {};
 var points = 0;
+var item_count=0;
 
   $.ajax({
               url: "get_questions",
@@ -20,6 +21,7 @@ var points = 0;
                    $("#multiple_choice").append("<h4>"+(i+1)+". "+res[i][0]+"</h4>"); 
                    options = res[i][2].split(",");                   
                    options = shuffle(options);
+                   item_count++;
                    for(var x=0; x< options.length; x++){
                   $("#multiple_choice").append(
                     "<div class='input-group'>" +
@@ -52,6 +54,7 @@ var points = 0;
                    }
                    answer_count = res[i][2];
                    for(var x=0; x< answer_count; x++){
+                    item_count++;
                   $("#enumeration").append(
                     "<div class='input-group'>" +
                       "<label>Answer: "+(x+1)+": <input type='text' class = 'form-control enumeration' name = '"+res[i][1]+"'></label></div>"
@@ -126,20 +129,24 @@ $("#check").click(function(){
              $("#"+x+"_answer").addClass('alert-danger');
           }
       }
-  $("#score").append('Score: '+points+ '/101');
+  $("#score").append('Score: '+points+ '/'+item_count);
 
     $.ajax({
                 url: "save_score",
-                type: 'POST',
+                type: 'GET',
                 dataType: 'json',
                 data: {
                   score: points,
                   subject: selected_subject,
+                  total: item_count,
                 }, // added data type
 
                 success: function(res) {
-
+                  $('html, body').animate({ scrollTop: 0 }, 'fast');
+                  $("#check").prop("disabled", true);
                 }
     });
+
+    
 
   });
